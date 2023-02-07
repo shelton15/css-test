@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<body>
+    
+
+<div></div>
+
+
+<style>
+    body{
+        background: #293462;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+        background: #fff1c1;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    div::before{
+        content: '';
+        position: absolute;
+        width: 157px;
+        height: 159px;
+        background: #fe5f55;
+        transform: rotate(45deg);
+        bottom: -120px;
+        left: -50px;
+    }
+    div::after{
+        content: '';
+        position: absolute;
+        width: 159px;
+        height: 158px;
+        background: #fe5f55;
+        transform: rotate(45deg);
+        bottom: -50px;
+        right: -22px;
+    }
+</style>
+</body>
+</html>
